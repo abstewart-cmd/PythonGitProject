@@ -136,7 +136,22 @@ japanese_questions = [
      ["A. Administering civilian education programs",
       "B. Serving as military police for intelligence, enforcement, suppression",
       "C. Managing Agricultural production and food distribution", "D.Training Filipino Soldiers for the Japanese"],
-     "B"]
+     "B"],
+
+    ["Who quoted “I will return.”?",
+     ["A. Sergio Osmeña", "B. Arthur MacArthur Jr.", "C. Manuel L. Quezon", "D.  Douglas MacArthur"], "D"],
+
+    ["What is the full name of ‘HUKBALAHAP”?",
+     ["A. Hukbo Bayan Laban sa Hapon", "B. Hinukbong Bayan Laban sa Hapon", "C. Hukbong Bayan Laban sa Hapon", "D. Hukbong Laban Bayan sa Hapon"], "C"],
+
+    ["What was the main reason of why the U.S. declared Manila as an “Open City”?",
+     ["A. So that they can ambush the Japanese forces", "B. So that they can send soldiers there", "C. Because they gave up", "D. To potentially delay its destruction from Japanese forces"], "D"],
+
+    ["How many years did the Japanese occupy the Philippines?",
+     ["A. 1", "B. 2", "C. 3", "D. 4"], "C"],
+
+    ["When did Pearl Harbor get bombed?",
+     ["A. February 3, 1942", "B. December 8, 1942", "C. December 7, 1942", "D. December 7, 1941"], "D"]
 ]
 
 
