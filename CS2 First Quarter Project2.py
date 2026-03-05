@@ -210,9 +210,21 @@ def quiz_main():
     choice = input("Pick a topic (1-3): ")
 
     if choice == "1":
-        score = ask_questions(spanish_questions)
-        rank = convert_rank(score)
-        print("\nYou got", score, "out of 5. Rank:", rank)
+        spanish_questions_difficulty_choice = input("What difficulty would you want to choose? (EASY, MEDIUM)")
+
+        if spanish_questions_difficulty_choice == "EASY":
+            score = ask_questions(spanish_questions_easy)
+            rank = convert_rank(score)
+            print("\nYou got", score, "out of 10. Rank:", rank)
+
+        elif spanish_questions_difficulty_choice == "MEDIUM":
+            score = ask_questions(spanish_questions_medium)
+            rank = convert_rank(score)
+            print("\nYou got", score, "out of 11. Rank:", rank)
+
+        else:
+            print("Sorry, It seems you chose an invalid response! Please type in ALL CAPS!")
+
     elif choice == "2":
         score = ask_questions(american_questions)
         rank = convert_rank(score)
