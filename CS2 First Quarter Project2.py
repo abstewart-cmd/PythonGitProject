@@ -161,15 +161,11 @@ def ask_questions(question_list):
 
 def convert_rank(score):
     # Convert score (0-5) to a rank
-    if score == 5:
-        return "S"
-    elif score == 4:
-        return "A"
-    elif score == 3:
-        return "B"
-    elif score == 2:
-        return "C"
-    elif score == 1:
+    if score >= 5:
+        return "F"
+    elif score >= 6:
+        return "E"
+    elif score >= 7:
         return "D"
     else:
         return "F"
