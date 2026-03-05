@@ -167,6 +167,14 @@ def convert_rank(score):
         return "E"
     elif score >= 7:
         return "D"
+    elif score >= 8:
+        return "C"
+    elif score >= 9:
+        return "B"
+    elif score >= 10:
+        return "A"
+    elif score >= 11:
+        return "S"
     else:
         return "F"
 
