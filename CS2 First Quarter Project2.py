@@ -32,6 +32,9 @@ spanish_questions_easy = [
     ["What did the Spanish first call the Phillipines?",
      ["A. The Philippine Islands", "B. Filipinas", "C. The Philippines", "D. Las Islas Filipinas"], "D"],
 
+    ["What are one of the professions Jose Rizal has?",
+     ["A. Doctor", "B. Actress", "C. Bartender", "D. Otolaryngologist"], "A"],
+
     ["What is the first Republic of the Philippines called?",
      ["A. Malolos Republic", "B. Republika nang Biak-na-Bato", "C. Manila Republic", "D. New Republic"], "A"],
 
