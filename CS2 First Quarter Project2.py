@@ -167,7 +167,7 @@ japanese_questions = [
 
 def ask_questions(question_list):
     # Ask 5 random questions from the list and return score
-    questions = random.sample(question_list, 5)
+    questions = random.sample(question_list, 6)
     score = 0
     for q in questions:
         print("\n" + q[0])
