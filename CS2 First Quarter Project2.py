@@ -95,7 +95,22 @@ american_questions = [
      ["A. William Howard Taft", "B. Leonard Wood", "C. Francis Burton Harrison", "D. Dwight Davis"], "A"],
 
     ["Which program sent Filipino scholars to study in the US during the American period?",
-     ["A. Pensionado Program", "B. Filipinization Program", "C. Commonwealth Scholarship", "D. OsRox Mission"], "A"]
+     ["A. Pensionado Program", "B. Filipinization Program", "C. Commonwealth Scholarship", "D. OsRox Mission"], "A"],
+
+    ["What was an American educated Filipino student called?",
+     ["A. Pensionado", "B. Ilustrado", "C. Scholar", "D. Thomasites"], "A"],
+
+    ["When did Emilio Aguinaldo get captured?",
+     ["A. February 4, 1899", "B. March 2, 1901", "C. March 23, 1901", "D. September 29, 1901"], "C"],
+
+    ["Who ordered retaliation over the Balangiga massacre?",
+     ["A. Eugenio Daza", "B. Arthur MacArthur, Jr", "C. Jacob H. Smith", "D. Vicente Lukban"], ""],
+
+    ["How many dollars did the Americans give the Spaniards for the Philippines?",
+     ["A. $20,000,000", "B. $15,000,000", "C. $10,000,000", "D. $25,000,000"], "A"],
+
+    ["What is the act that eventually caused the second independence of the Philippines?",
+     ["A. Hare-Hawes-Cutting Act", "B. Jones Law", "C. Jones-Shafroth Act", "D. Tydings-Mcduffie Act"], "D"]
 ]
 
 japanese_questions = [
