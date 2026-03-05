@@ -176,7 +176,7 @@ def convert_rank(score):
     elif score >= 11:
         return "S"
     else:
-        return "F"
+        return "N/A (There seems to be an error you or the code made, please try again!)"
 
 
 # Main game loop
