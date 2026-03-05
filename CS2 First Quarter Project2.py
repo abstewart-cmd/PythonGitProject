@@ -25,7 +25,7 @@ spanish_questions = [
     ["Which Filipino reformist founded the La Solidaridad and advocated peaceful reforms in Spain?",
      ["A. Marcelo H. del Pilar", "B. Graciano Lopez Jaena", "C. Jose Rizal", "D. Mariano Ponce"], "B"],
 
-    ["Who had the title of the "kindest" Governor-General in the Philippines?",
+    ["Who had the title of the ''kindest'' Governor-General in the Philippines?",
      ["A. Rafael de Izquierdo y Gutíerrez", "B. Juan Alaminos y Vivar", "C. Carlos Maria de la Torre y Navacerrada",
       "D. José Malcampo y Monje"], "C"],
 
