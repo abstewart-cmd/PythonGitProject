@@ -228,7 +228,8 @@ def quiz_main():
     elif choice == "2":
         score = ask_questions(american_questions)
         rank = convert_rank(score)
-        print("\nYou got", score, "out of 5. Rank:", rank)
+        print("\nYou got", score, "out of 12. Rank:", rank)
+
     elif choice == "3":
         score = ask_questions(japanese_questions)
         rank = convert_rank(score)
