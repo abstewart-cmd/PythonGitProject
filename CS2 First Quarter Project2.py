@@ -35,8 +35,13 @@ spanish_questions_easy = [
     ["What is the first Republic of the Philippines called?",
      ["A. Malolos Republic", "B. Republika nang Biak-na-Bato", "C. Manila Republic", "D. New Republic"], "A"],
 
-    ["What are one of the professions Jose Rizal has?",
-     ["A. Doctor", "B. Actress", "C. Bartender", "D. Otolaryngologist"], "A"],
+]
+
+spanish_questions_medium = [
+
+    ["Who had the title of the ''kindest'' Governor-General in the Philippines?",
+     ["A. Rafael de Izquierdo y Gutíerrez", "B. Juan Alaminos y Vivar", "C. Carlos Maria de la Torre y Navacerrada",
+      "D. José Malcampo y Monje"], "C"],
 
     ["Was Andres Bonifacio part of the First Republic, and since when?",
      ["A. Yes, 1898", "B. Yes, 1899", "C. No, he decided not to join", "D. No, he was already dead"], "D"],
