@@ -2,7 +2,7 @@
 import random
 
 # Questions for each topic
-spanish_questions = [
+spanish_questions_easy = [
     ["Who established the first permanent Spanish settlement in Cebu in 1565?",
      ["A. Ferdinand Magellan", "B. Miguel López de Legazpi", "C. Andres de Urdaneta", "D. Diego Silang"], "B"],
 
