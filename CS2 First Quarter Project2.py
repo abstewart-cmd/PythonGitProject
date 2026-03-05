@@ -23,7 +23,55 @@ spanish_questions = [
      ["A. Gomez", "B. Burgos", "C. Zamora", "D. Pelaez"], "D"],
 
     ["Which Filipino reformist founded the La Solidaridad and advocated peaceful reforms in Spain?",
-     ["A. Marcelo H. del Pilar", "B. Graciano Lopez Jaena", "C. Jose Rizal", "D. Mariano Ponce"], "B"]
+     ["A. Marcelo H. del Pilar", "B. Graciano Lopez Jaena", "C. Jose Rizal", "D. Mariano Ponce"], "B"],
+
+    ["Who had the title of the "kindest" Governor-General in the Philippines?",
+     ["A. Rafael de Izquierdo y Gutíerrez", "B. Juan Alaminos y Vivar", "C. Carlos Maria de la Torre y Navacerrada",
+      "D. José Malcampo y Monje"], "C"],
+
+    ["What did the Spanish first call the Phillipines?",
+     ["A. The Philippine Islands", "B. Filipinas", "C. The Philippines", "D. Las Islas Filipinas"], "D"],
+
+    ["What is the first Republic of the Philippines called?",
+     ["A. Malolos Republic", "B. Republika nang Biak-na-Bato", "C. Manila Republic", "D. New Republic"], "A"],
+
+    ["What are one of the professions Jose Rizal has?",
+     ["A. Doctor", "B. Actress", "C. Bartender", "D. Otolaryngologist"], "A"],
+
+    ["Was Andres Bonifacio part of the First Republic, and since when?",
+     ["A. Yes, 1898", "B. Yes, 1899", "C. No, he decided not to join", "D. No, he was already dead"], "D"],
+
+    ["Why was the Suez Canal important to the Philippines?",
+     ["A. It allowed direct commercial relations with Spain instead of just Mexico",
+      "B. It allowed Portugal to attack  the Philippines", "C. It made the prices go up",
+      "D. It made the Philippines even richer"], "A"],
+
+    ["What was the full name of the 'Katipunan' or 'KKK'?",
+     ["A. Kataasan Kagalang Katipunan nang mga Anak nang Bayan",
+      "B. Kataastaasan Kagalanggalang Katipunan ng mga Anak ng Bayan ",
+      "C. Kataastaasan Kagalanggalang Katipunanan nang mga Anak nang Bayan",
+      "D. Kataastaasan Kagalanggalang Katipunan nang mga Anak nang Bayan"], "B"],
+
+    ["Where did the Philippine flag get raised for the first time?",
+     ["A. Dapitan, Zamboanga Del Norte", "B. Dapitan, Zamboanga Del Sur", "C. Kawit, Cavite", "D. Manila"], "C"],
+
+    ["What was one of the books Rizal wrote?",
+     ["A. Junto el Pasig", "B. Noli mi Tangere", "C. La Indolencia de los Filipinos.", "D. Al Filibusterismo"], "C"],
+
+    ["What was the lowest class of Filipinos called?",
+     ["A. Indios", "B. Kastila", "C. Indios", "D. Mestizo"], "A"],
+
+    ["What was a Chinese-Filipino called?",
+     ["A. Indios", "B. Mestizo", "C. Kastila", "D. Mestizo de Sangley"], "C"],
+
+    ["What were mixed Filipinos called?",
+     ["A. Kastila", "B. Indios", "C. Kastilang Filipino", "D. Mestizo"], "D"],
+
+    ["When did the Katipunan get founded? ",
+     ["A. August 16, 1896", "B. July 7, 1892", "C. June 7, 1892", "D. June 7, 1982"], "B"],
+
+    ["When did the Katipunan get discovered by Spanish Forces?",
+     ["A. June 7, 1896", "B. August 19, 1896", "C. September 16, 1896", "D. July 16, 1896"], "B"]
 ]
 
 american_questions = [
