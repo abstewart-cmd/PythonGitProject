@@ -183,20 +183,20 @@ def ask_questions(question_list):
 
 
 def convert_rank(score):
-    # Convert score (0-5) to a rank
-    if score <= 5:
+    # Convert score (0-6) to a rank
+    if score == 0:
         return "F"
-    elif score >= 6:
+    elif score == 1:
         return "E"
-    elif score >= 7:
+    elif score == 2:
         return "D"
-    elif score >= 8:
+    elif score == 3:
         return "C"
-    elif score >= 9:
+    elif score == 4:
         return "B"
-    elif score >= 10:
+    elif score == 5:
         return "A"
-    elif score >= 11:
+    elif score == 6:
         return "S"
     else:
         return "N/A (There seems to be an error you or the code made, please try again!)"
@@ -215,12 +215,12 @@ def quiz_main():
         if spanish_questions_difficulty_choice == "EASY":
             score = ask_questions(spanish_questions_easy)
             rank = convert_rank(score)
-            print("\nYou got", score, "out of 10. Rank:", rank)
+            print("\nYou got", score, "out of 6. Rank:", rank)
 
         elif spanish_questions_difficulty_choice == "MEDIUM":
             score = ask_questions(spanish_questions_medium)
             rank = convert_rank(score)
-            print("\nYou got", score, "out of 11. Rank:", rank)
+            print("\nYou got", score, "out of 6. Rank:", rank)
 
         else:
             print("Sorry, It seems you chose an invalid response! Please type in ALL CAPS!")
@@ -228,12 +228,12 @@ def quiz_main():
     elif choice == "2":
         score = ask_questions(american_questions)
         rank = convert_rank(score)
-        print("\nYou got", score, "out of 12. Rank:", rank)
+        print("\nYou got", score, "out of 6. Rank:", rank)
 
     elif choice == "3":
         score = ask_questions(japanese_questions)
         rank = convert_rank(score)
-        print("\nYou got", score, "out of 12. Rank:", rank)
+        print("\nYou got", score, "out of 6. Rank:", rank)
     else:
         print("Invalid choice.")
 
