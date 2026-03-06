@@ -1,341 +1,342 @@
 # Random mod for the random choosing of questions.
 import random
 
-# Questions for each topic
-spanish_questions_easy = [
-    ["Who established the first permanent Spanish settlement in Cebu in 1565?",
-     ["A. Ferdinand Magellan", "B. Miguel López de Legazpi", "C. Andres de Urdaneta", "D. Diego Silang"], "B"],
+    # Questions for each topic
+    spanish_questions_easy = [
+        ["Who established the first permanent Spanish settlement in Cebu in 1565?",
+         ["A. Ferdinand Magellan", "B. Miguel López de Legazpi", "C. Andres de Urdaneta", "D. Diego Silang"], "B"],
 
-    ["Which event in 1896 marked the beginning of the Philippine Revolution?",
-     ["A. Cry of Balintawak", "B. Declaration of Independence", "C. Treaty of Tordesillas", "D. Battle of Manila Bay"],
-     "A"],
+        ["Which event in 1896 marked the beginning of the Philippine Revolution?",
+         ["A. Cry of Balintawak", "B. Declaration of Independence", "C. Treaty of Tordesillas", "D. Battle of Manila Bay"],
+         "A"],
 
-    ["Who was executed on December 30, 1896?",
-     ["A. Andres Bonifacio", "B. Emilio Aguinaldo", "C. Jose Rizal", "D. Apolinario Mabini"], "C"],
+        ["Who was executed on December 30, 1896?",
+         ["A. Andres Bonifacio", "B. Emilio Aguinaldo", "C. Jose Rizal", "D. Apolinario Mabini"], "C"],
 
-    ["What was the system granting Spaniards land and labor from natives called?",
-     ["A. Encomienda", "B. Feudalism", "C. Zemstvo", "D. Padrino system"], "A"],
+        ["What was the system granting Spaniards land and labor from natives called?",
+         ["A. Encomienda", "B. Feudalism", "C. Zemstvo", "D. Padrino system"], "A"],
 
-    ["Which movement included Rizal and Marcelo H. del Pilar?",
-     ["A. Katipunan", "B. Propaganda Movement", "C. Hukbalahap", "D. Kilusang Bagong Lipunan"], "B"],
+        ["Which movement included Rizal and Marcelo H. del Pilar?",
+         ["A. Katipunan", "B. Propaganda Movement", "C. Hukbalahap", "D. Kilusang Bagong Lipunan"], "B"],
 
-    ["Which Filipino priest was NOT part of the GOMBURZA trio executed in 1872?",
-     ["A. Gomez", "B. Burgos", "C. Zamora", "D. Pelaez"], "D"],
+        ["Which Filipino priest was NOT part of the GOMBURZA trio executed in 1872?",
+         ["A. Gomez", "B. Burgos", "C. Zamora", "D. Pelaez"], "D"],
 
-    ["Which Filipino reformist founded the La Solidaridad and advocated peaceful reforms in Spain?",
-     ["A. Marcelo H. del Pilar", "B. Graciano Lopez Jaena", "C. Jose Rizal", "D. Mariano Ponce"], "B"],
+        ["Which Filipino reformist founded the La Solidaridad and advocated peaceful reforms in Spain?",
+         ["A. Marcelo H. del Pilar", "B. Graciano Lopez Jaena", "C. Jose Rizal", "D. Mariano Ponce"], "B"],
 
-    ["Who had the title of the ''kindest'' Governor-General in the Philippines?",
-     ["A. Rafael de Izquierdo y Gutíerrez", "B. Juan Alaminos y Vivar", "C. Carlos Maria de la Torre y Navacerrada",
-      "D. José Malcampo y Monje"], "C"],
+        ["What did the Spanish first call the Phillipines?",
+         ["A. The Philippine Islands", "B. Filipinas", "C. The Philippines", "D. Las Islas Filipinas"], "D"],
 
-    ["What did the Spanish first call the Phillipines?",
-     ["A. The Philippine Islands", "B. Filipinas", "C. The Philippines", "D. Las Islas Filipinas"], "D"],
+        ["What are one of the professions Jose Rizal has?",
+         ["A. Doctor", "B. Actress", "C. Bartender", "D. Otolaryngologist"], "A"],
 
-    ["What are one of the professions Jose Rizal has?",
-     ["A. Doctor", "B. Actress", "C. Bartender", "D. Otolaryngologist"], "A"],
+        ["What is the first Republic of the Philippines called?",
+         ["A. Malolos Republic", "B. Republika nang Biak-na-Bato", "C. Manila Republic", "D. New Republic"], "A"],
 
-    ["What is the first Republic of the Philippines called?",
-     ["A. Malolos Republic", "B. Republika nang Biak-na-Bato", "C. Manila Republic", "D. New Republic"], "A"],
+    ]
 
-]
+    spanish_questions_medium = [
 
-spanish_questions_medium = [
+        ["Who had the title of the ''kindest'' Governor-General in the Philippines?",
+         ["A. Rafael de Izquierdo y Gutíerrez", "B. Juan Alaminos y Vivar", "C. Carlos Maria de la Torre y Navacerrada",
+          "D. José Malcampo y Monje"], "C"],
 
-    ["Who had the title of the ''kindest'' Governor-General in the Philippines?",
-     ["A. Rafael de Izquierdo y Gutíerrez", "B. Juan Alaminos y Vivar", "C. Carlos Maria de la Torre y Navacerrada",
-      "D. José Malcampo y Monje"], "C"],
+        ["Was Andres Bonifacio part of the First Republic, and since when?",
+         ["A. Yes, 1898", "B. Yes, 1899", "C. No, he decided not to join", "D. No, he was already dead"], "D"],
 
-    ["Was Andres Bonifacio part of the First Republic, and since when?",
-     ["A. Yes, 1898", "B. Yes, 1899", "C. No, he decided not to join", "D. No, he was already dead"], "D"],
+        ["Why was the Suez Canal important to the Philippines?",
+         ["A. It allowed direct commercial relations with Spain instead of just Mexico",
+          "B. It allowed Portugal to attack  the Philippines", "C. It made the prices go up",
+          "D. It made the Philippines even richer"], "A"],
 
-    ["Why was the Suez Canal important to the Philippines?",
-     ["A. It allowed direct commercial relations with Spain instead of just Mexico",
-      "B. It allowed Portugal to attack  the Philippines", "C. It made the prices go up",
-      "D. It made the Philippines even richer"], "A"],
+        ["What was the full name of the 'Katipunan' or 'KKK'?",
+         ["A. Kataasan Kagalang Katipunan nang mga Anak nang Bayan",
+          "B. Kataastaasan Kagalanggalang Katipunan ng mga Anak ng Bayan ",
+          "C. Kataastaasan Kagalanggalang Katipunanan nang mga Anak nang Bayan",
+          "D. Kataastaasan Kagalanggalang Katipunan nang mga Anak nang Bayan"], "B"],
 
-    ["What was the full name of the 'Katipunan' or 'KKK'?",
-     ["A. Kataasan Kagalang Katipunan nang mga Anak nang Bayan",
-      "B. Kataastaasan Kagalanggalang Katipunan ng mga Anak ng Bayan ",
-      "C. Kataastaasan Kagalanggalang Katipunanan nang mga Anak nang Bayan",
-      "D. Kataastaasan Kagalanggalang Katipunan nang mga Anak nang Bayan"], "B"],
+        ["Where did the Philippine flag get raised for the first time?",
+         ["A. Dapitan, Zamboanga Del Norte", "B. Dapitan, Zamboanga Del Sur", "C. Kawit, Cavite", "D. Manila"], "C"],
 
-    ["Where did the Philippine flag get raised for the first time?",
-     ["A. Dapitan, Zamboanga Del Norte", "B. Dapitan, Zamboanga Del Sur", "C. Kawit, Cavite", "D. Manila"], "C"],
+        ["What was one of the books Rizal wrote?",
+         ["A. Junto el Pasig", "B. Noli mi Tangere", "C. La Indolencia de los Filipinos.", "D. Al Filibusterismo"], "C"],
 
-    ["What was one of the books Rizal wrote?",
-     ["A. Junto el Pasig", "B. Noli mi Tangere", "C. La Indolencia de los Filipinos.", "D. Al Filibusterismo"], "C"],
+        ["What was the lowest class of Filipinos called?",
+         ["A. Indios", "B. Kastila", "C. Indios", "D. Mestizo"], "A"],
 
-    ["What was the lowest class of Filipinos called?",
-     ["A. Indios", "B. Kastila", "C. Indios", "D. Mestizo"], "A"],
+        ["What was a Chinese-Filipino called?",
+         ["A. Indios", "B. Mestizo", "C. Kastila", "D. Mestizo de Sangley"], "C"],
 
-    ["What was a Chinese-Filipino called?",
-     ["A. Indios", "B. Mestizo", "C. Kastila", "D. Mestizo de Sangley"], "C"],
+        ["What were mixed Filipinos called?",
+         ["A. Kastila", "B. Indios", "C. Kastilang Filipino", "D. Mestizo"], "D"],
 
-    ["What were mixed Filipinos called?",
-     ["A. Kastila", "B. Indios", "C. Kastilang Filipino", "D. Mestizo"], "D"],
+        ["When did the Katipunan get founded? ",
+         ["A. August 16, 1896", "B. July 7, 1892", "C. June 7, 1892", "D. June 7, 1982"], "B"],
 
-    ["When did the Katipunan get founded? ",
-     ["A. August 16, 1896", "B. July 7, 1892", "C. June 7, 1892", "D. June 7, 1982"], "B"],
+        ["When did the Katipunan get discovered by Spanish Forces?",
+         ["A. June 7, 1896", "B. August 19, 1896", "C. September 16, 1896", "D. July 16, 1896"], "B"]
+    ]
 
-    ["When did the Katipunan get discovered by Spanish Forces?",
-     ["A. June 7, 1896", "B. August 19, 1896", "C. September 16, 1896", "D. July 16, 1896"], "B"]
-]
+    american_questions = [
+        ["Which event ended Spanish rule and gave control to the U.S. in 1898?",
+         ["A. Treaty of Paris", "B. Spanish Civil War", "C. Battle of Waterloo", "D. Boxer Rebellion"], "A"],
 
-american_questions = [
-    ["Which event ended Spanish rule and gave control to the U.S. in 1898?",
-     ["A. Treaty of Paris", "B. Spanish Civil War", "C. Battle of Waterloo", "D. Boxer Rebellion"], "A"],
+        ["Who was the first President of the Philippine Republic?",
+         ["A. Jose P. Laurel", "B. Emilio Aguinaldo", "C. Manuel Quezon", "D. Sergio Osmeña"], "B"],
 
-    ["Who was the first President of the Philippine Republic?",
-     ["A. Jose P. Laurel", "B. Emilio Aguinaldo", "C. Manuel Quezon", "D. Sergio Osmeña"], "B"],
+        ["Which education policy did Americans bring?",
+         ["A. Free-market universities", "B. Public schools with English", "C. Expansion of Spanish colleges",
+          "D. Military schools"], "B"],
 
-    ["Which education policy did Americans bring?",
-     ["A. Free-market universities", "B. Public schools with English", "C. Expansion of Spanish colleges",
-      "D. Military schools"], "B"],
+        ["What 1935 political milestone created the Commonwealth?",
+         ["A. Jones Act", "B. Tydings–McDuffie Act", "C. 1935 Constitution", "D. Bataan Proclamation"], "C"],
 
-    ["What 1935 political milestone created the Commonwealth?",
-     ["A. Jones Act", "B. Tydings–McDuffie Act", "C. 1935 Constitution", "D. Bataan Proclamation"], "C"],
+        ["Which naval battle ended Spanish naval power in the Pacific?",
+         ["A. Midway", "B. Manila Bay", "C. Leyte Gulf", "D. Trafalgar"], "B"],
 
-    ["Which naval battle ended Spanish naval power in the Pacific?",
-     ["A. Midway", "B. Manila Bay", "C. Leyte Gulf", "D. Trafalgar"], "B"],
+        ["Which American governor-general established the Philippine Assembly in 1907?",
+         ["A. William Howard Taft", "B. Leonard Wood", "C. Francis Burton Harrison", "D. Dwight Davis"], "A"],
 
-    ["Which American governor-general established the Philippine Assembly in 1907?",
-     ["A. William Howard Taft", "B. Leonard Wood", "C. Francis Burton Harrison", "D. Dwight Davis"], "A"],
+        ["Which program sent Filipino scholars to study in the US during the American period?",
+         ["A. Pensionado Program", "B. Filipinization Program", "C. Commonwealth Scholarship", "D. OsRox Mission"], "A"],
 
-    ["Which program sent Filipino scholars to study in the US during the American period?",
-     ["A. Pensionado Program", "B. Filipinization Program", "C. Commonwealth Scholarship", "D. OsRox Mission"], "A"],
+        ["What was an American educated Filipino student called?",
+         ["A. Pensionado", "B. Ilustrado", "C. Scholar", "D. Thomasites"], "A"],
 
-    ["What was an American educated Filipino student called?",
-     ["A. Pensionado", "B. Ilustrado", "C. Scholar", "D. Thomasites"], "A"],
+        ["When did Emilio Aguinaldo get captured?",
+         ["A. February 4, 1899", "B. March 2, 1901", "C. March 23, 1901", "D. September 29, 1901"], "C"],
 
-    ["When did Emilio Aguinaldo get captured?",
-     ["A. February 4, 1899", "B. March 2, 1901", "C. March 23, 1901", "D. September 29, 1901"], "C"],
+        ["Who ordered retaliation over the Balangiga massacre?",
+         ["A. Eugenio Daza", "B. Arthur MacArthur, Jr", "C. Jacob H. Smith", "D. Vicente Lukban"], "C"],
 
-    ["Who ordered retaliation over the Balangiga massacre?",
-     ["A. Eugenio Daza", "B. Arthur MacArthur, Jr", "C. Jacob H. Smith", "D. Vicente Lukban"], ""],
+        ["How many dollars did the Americans give the Spaniards for the Philippines?",
+         ["A. $20,000,000", "B. $15,000,000", "C. $10,000,000", "D. $25,000,000"], "A"],
 
-    ["How many dollars did the Americans give the Spaniards for the Philippines?",
-     ["A. $20,000,000", "B. $15,000,000", "C. $10,000,000", "D. $25,000,000"], "A"],
+        ["What is the act that eventually caused the second independence of the Philippines?",
+         ["A. Hare-Hawes-Cutting Act", "B. Jones Law", "C. Jones-Shafroth Act", "D. Tydings-Mcduffie Act"], "D"]
+    ]
 
-    ["What is the act that eventually caused the second independence of the Philippines?",
-     ["A. Hare-Hawes-Cutting Act", "B. Jones Law", "C. Jones-Shafroth Act", "D. Tydings-Mcduffie Act"], "D"]
-]
+    japanese_questions = [
+        ["When did Japan occupy Manila in WWII?",
+         ["A. 1942", "B. 1939", "C. 1950", "D. 1914"], "A"],
 
-japanese_questions = [
-    ["When did Japan occupy Manila in WWII?",
-     ["A. 1942", "B. 1939", "C. 1950", "D. 1914"], "A"],
+        ["What was the forced transfer of Filipino & American soldiers after Bataan?",
+         ["A. Cebu March", "B. Bataan Death March", "C. Leyte Exodus", "D. Davao Walk"], "B"],
 
-    ["What was the forced transfer of Filipino & American soldiers after Bataan?",
-     ["A. Cebu March", "B. Bataan Death March", "C. Leyte Exodus", "D. Davao Walk"], "B"],
+        ["Which operation liberated the Philippines?",
+         ["A. Overlord", "B. Leyte Campaign 1944", "C. Torch", "D. Iwo Jima"], "B"],
 
-    ["Which operation liberated the Philippines?",
-     ["A. Overlord", "B. Leyte Campaign 1944", "C. Torch", "D. Iwo Jima"], "B"],
+        ["Who led the Japanese-sponsored government?",
+         ["A. Manuel Quezon", "B. Jose P. Laurel", "C. Sergio Osmeña", "D. Corazon Aquino"], "B"],
 
-    ["Who led the Japanese-sponsored government?",
-     ["A. Manuel Quezon", "B. Jose P. Laurel", "C. Sergio Osmeña", "D. Corazon Aquino"], "B"],
+        ["Which 1945 battle devastated Manila?",
+         ["A. Battle of Manila", "B. Taal Eruption", "C. Mindoro Invasion", "D. Bataan"], "A"],
 
-    ["Which 1945 battle devastated Manila?",
-     ["A. Battle of Manila", "B. Taal Eruption", "C. Mindoro Invasion", "D. Bataan"], "A"],
+        ["Which battle in 1945 caused massive destruction of Intramuros and central Manila?",
+         ["A. Battle of Manila", "B. Battle of Leyte Gulf", "C. Battle of Bataan", "D. Battle of Corregidor"], "A"],
 
-    ["Which battle in 1945 caused massive destruction of Intramuros and central Manila?",
-     ["A. Battle of Manila", "B. Battle of Leyte Gulf", "C. Battle of Bataan", "D. Battle of Corregidor"], "A"],
+        ["What was the primary role of the Kempeitai in the Philippines during the Japanese occupation?",
+         ["A. Administering civilian education programs",
+          "B. Serving as military police for intelligence, enforcement, suppression",
+          "C. Managing Agricultural production and food distribution", "D.Training Filipino Soldiers for the Japanese"],
+         "B"],
 
-    ["What was the primary role of the Kempeitai in the Philippines during the Japanese occupation?",
-     ["A. Administering civilian education programs",
-      "B. Serving as military police for intelligence, enforcement, suppression",
-      "C. Managing Agricultural production and food distribution", "D.Training Filipino Soldiers for the Japanese"],
-     "B"],
+        ["Who quoted “I will return.”?",
+         ["A. Sergio Osmeña", "B. Arthur MacArthur Jr.", "C. Manuel L. Quezon", "D.  Douglas MacArthur"], "D"],
 
-    ["Who quoted “I will return.”?",
-     ["A. Sergio Osmeña", "B. Arthur MacArthur Jr.", "C. Manuel L. Quezon", "D.  Douglas MacArthur"], "D"],
+        ["What is the full name of ‘HUKBALAHAP”?",
+         ["A. Hukbo Bayan Laban sa Hapon", "B. Hinukbong Bayan Laban sa Hapon", "C. Hukbong Bayan Laban sa Hapon", "D. Hukbong Laban Bayan sa Hapon"], "C"],
 
-    ["What is the full name of ‘HUKBALAHAP”?",
-     ["A. Hukbo Bayan Laban sa Hapon", "B. Hinukbong Bayan Laban sa Hapon", "C. Hukbong Bayan Laban sa Hapon", "D. Hukbong Laban Bayan sa Hapon"], "C"],
+        ["What was the main reason of why the U.S. declared Manila as an “Open City”?",
+         ["A. So that they can ambush the Japanese forces", "B. So that they can send soldiers there", "C. Because they gave up", "D. To potentially delay its destruction from Japanese forces"], "D"],
 
-    ["What was the main reason of why the U.S. declared Manila as an “Open City”?",
-     ["A. So that they can ambush the Japanese forces", "B. So that they can send soldiers there", "C. Because they gave up", "D. To potentially delay its destruction from Japanese forces"], "D"],
+        ["How many years did the Japanese occupy the Philippines?",
+         ["A. 1", "B. 2", "C. 3", "D. 4"], "C"],
 
-    ["How many years did the Japanese occupy the Philippines?",
-     ["A. 1", "B. 2", "C. 3", "D. 4"], "C"],
-
-    ["When did Pearl Harbor get bombed?",
-     ["A. February 3, 1942", "B. December 8, 1942", "C. December 7, 1942", "D. December 7, 1941"], "D"]
-]
+        ["When did Pearl Harbor get bombed?",
+         ["A. February 3, 1942", "B. December 8, 1942", "C. December 7, 1942", "D. December 7, 1941"], "D"]
+    ]
 
 
-# Functions
+    # Functions
 
-def ask_questions(question_list):
-    # Ask 5 random questions from the list and return score
-    questions = random.sample(question_list, 6)
-    score = 0
-    for q in questions:
-        print("\n" + q[0])
-        for choice in q[1]:
-            print(choice)
-        answer = input("Your answer: ").upper()
-        if answer == q[2]:
-            print("Correct!")
-            score += 1
+    def ask_questions(question_list):
+        # Ask 5 random questions from the list and return score
+        questions = random.sample(question_list, 6)
+        score = 0
+        for q in questions:
+            print("\n" + q[0])
+            for choice in q[1]:
+                print(choice)
+            answer = input("Your answer: ").upper()
+            if answer == q[2]:
+                print("Correct!")
+                score += 1
+            else:
+                print("Wrong! The correct answer was", q[2])
+        return score
+
+
+    def convert_rank(score):
+        # Convert score (0-6) to a rank
+        if score == 0:
+            return "F"
+        elif score == 1:
+            return "E"
+        elif score == 2:
+            return "D"
+        elif score == 3:
+            return "C"
+        elif score == 4:
+            return "B"
+        elif score == 5:
+            return "A"
+        elif score == 6:
+            return "S"
         else:
-            print("Wrong! The correct answer was", q[2])
-    return score
+            return "N/A (There seems to be an error you or the code made, please try again!)"
 
 
-def convert_rank(score):
-    # Convert score (0-6) to a rank
-    if score == 0:
-        return "F"
-    elif score == 1:
-        return "E"
-    elif score == 2:
-        return "D"
-    elif score == 3:
-        return "C"
-    elif score == 4:
-        return "B"
-    elif score == 5:
-        return "A"
-    elif score == 6:
-        return "S"
-    else:
-        return "N/A (There seems to be an error you or the code made, please try again!)"
+    # Main game loop
+    def quiz_main():
+        print("Welcome to the Main Game of LAKBAY KASAYSAYAN!")
+        print("Topics:\n1. Spanish Era\n2. American Era\n3. Japanese Era")
 
+        choice = input("Pick a topic (1-3): ")
 
-# Main game loop
-def quiz_main():
-    print("Welcome to the Main Game of LAKBAY KASAYSAYAN!")
-    print("Topics:\n1. Spanish Era\n2. American Era\n3. Japanese Era")
+        if choice == "1":
+            spanish_questions_difficulty_choice = input("What difficulty would you want to choose? (EASY, MEDIUM)")
 
-    choice = input("Pick a topic (1-3): ")
+            if spanish_questions_difficulty_choice == "EASY":
+                score = ask_questions(spanish_questions_easy)
+                rank = convert_rank(score)
+                print("\nYou got", score, "out of 6. Rank:", rank)
 
-    if choice == "1":
-        spanish_questions_difficulty_choice = input("What difficulty would you want to choose? (EASY, MEDIUM)")
+            elif spanish_questions_difficulty_choice == "MEDIUM":
+                score = ask_questions(spanish_questions_medium)
+                rank = convert_rank(score)
+                print("\nYou got", score, "out of 6. Rank:", rank)
 
-        if spanish_questions_difficulty_choice == "EASY":
-            score = ask_questions(spanish_questions_easy)
+            else:
+                print("Sorry, It seems you chose an invalid response! Please type in ALL CAPS!")
+
+        elif choice == "2":
+            score = ask_questions(american_questions)
             rank = convert_rank(score)
             print("\nYou got", score, "out of 6. Rank:", rank)
 
-        elif spanish_questions_difficulty_choice == "MEDIUM":
-            score = ask_questions(spanish_questions_medium)
+        elif choice == "3":
+            score = ask_questions(japanese_questions)
             rank = convert_rank(score)
             print("\nYou got", score, "out of 6. Rank:", rank)
-
         else:
-            print("Sorry, It seems you chose an invalid response! Please type in ALL CAPS!")
-
-    elif choice == "2":
-        score = ask_questions(american_questions)
-        rank = convert_rank(score)
-        print("\nYou got", score, "out of 6. Rank:", rank)
-
-    elif choice == "3":
-        score = ask_questions(japanese_questions)
-        rank = convert_rank(score)
-        print("\nYou got", score, "out of 6. Rank:", rank)
-    else:
-        print("Invalid choice.")
+            print("Invalid choice.")
 
 
-# Instruction Manual
-def instructions():
-    print("LAKBAY KASAYSAYAN")
-    print("-" * 50)
-    print("In LAKBAY KASAYSAYAN's main game, you will be quizzed!")
-    print("> The topics range from the spanish era to the japanese occupation!")
-    print("> These are ALL multiple choice questions, randomly taken from a list!")
-    print("> Your choices range from A, B, C, or D. Remember to keep it Capital letters only!")
-    print("-" * 50)
-    print("SCORING SYSTEM")
-    print("-" * 50)
-    print("For every question you get right, you will be given a point!")
-    print("> There are a total of three questions per era, the max score being 3.")
-    print("> Depending on your score, you will get a Tier of S, A, B, C, D, E, or F.")
-    print("> The highest Tier is S, corresponding to 3 points, lowest being F, which is 0 points.")
-    print("> When playing multiple eras, your score will instead be the average score of all!")
-    print("-" * 50)
-    print("MAIN MENU")
-    print("-" * 50)
-    print("The main menu is the first thing you see when playing the game!")
-    print("> Three choices, New Entry, Instructions Manual, and Leave!")
-    print("> To start the main game, type in 1 for New entry!")
-    print("> To see the Instructions manual, type in 2 for Instructions!")
-    print("> To quit the game, type 3 for leave!")
+    # Instruction Manual
+    def instructions():
+        print("LAKBAY KASAYSAYAN")
+        print("-" * 50)
+        print("In LAKBAY KASAYSAYAN's main game, you will be quizzed!")
+        print("> The topics range from the spanish era to the japanese occupation!")
+        print("> These are ALL multiple choice questions, randomly taken from a list!")
+        print("> Your choices range from A, B, C, or D. Remember to keep it Capital letters only!")
+        print("-" * 50)
+        print("SCORING SYSTEM")
+        print("-" * 50)
+        print("For every question you get right, you will be given a point!")
+        print("> There are a total of three questions per era, the max score being 3.")
+        print("> Depending on your score, you will get a Tier of S, A, B, C, D, E, or F.")
+        print("> The highest Tier is S, corresponding to 3 points, lowest being F, which is 0 points.")
+        print("> When playing multiple eras, your score will instead be the average score of all!")
+        print("-" * 50)
+        print("MAIN MENU")
+        print("-" * 50)
+        print("The main menu is the first thing you see when playing the game!")
+        print("> Three choices, New Entry, Instructions Manual, and Leave!")
+        print("> To start the main game, type in 1 for New entry!")
+        print("> To see the Instructions manual, type in 2 for Instructions!")
+        print("> To quit the game, type 3 for leave!")
 
 
-# Run game
+    # Run game
 
-print("-" * 150)
+    print("-" * 150)
 
-print(r""" 
-              _               _  ______      __     __  _  __           _____     __     _______     __     __      _   _ 
-             | |        /\   | |/ /  _ \   /\\ \   / / | |/ /    /\    / ____|  /\\ \   / / ____|  /\\ \   / //\   | \ | |
-             | |       /  \  | ' /| |_) | /  \\ \_/ /  | ' /    /  \  | (___   /  \\ \_/ / (___   /  \\ \_/ //  \  |  \| |
-             | |      / /\ \ |  < |  _ < / /\ \\   /   |  <    / /\ \  \___ \ / /\ \\   / \___ \ / /\ \\   // /\ \ | . ` |
-             | |____ / ____ \| . \| |_) / ____ \| |    | . \  / ____ \ ____) / ____ \| |  ____) / ____ \| |/ ____ \| |\  |
-             |______/_/    \_\_|\_\____/_/    \_\_|    |_|\_\/_/    \_\_____/_/    \_\_| |_____/_/    \_\_/_/    \_\_| \_|
+    print(r""" 
+                  _               _  ______      __     __  _  __           _____     __     _______     __     __      _   _ 
+                 | |        /\   | |/ /  _ \   /\\ \   / / | |/ /    /\    / ____|  /\\ \   / / ____|  /\\ \   / //\   | \ | |
+                 | |       /  \  | ' /| |_) | /  \\ \_/ /  | ' /    /  \  | (___   /  \\ \_/ / (___   /  \\ \_/ //  \  |  \| |
+                 | |      / /\ \ |  < |  _ < / /\ \\   /   |  <    / /\ \  \___ \ / /\ \\   / \___ \ / /\ \\   // /\ \ | . ` |
+                 | |____ / ____ \| . \| |_) / ____ \| |    | . \  / ____ \ ____) / ____ \| |  ____) / ____ \| |/ ____ \| |\  |
+                 |______/_/    \_\_|\_\____/_/    \_\_|    |_|\_\/_/    \_\_____/_/    \_\_| |_____/_/    \_\_/_/    \_\_| \_|
+    
+    """)
 
-""")
+    print("-" * 150)
 
-print("-" * 150)
+    print(r""" 
+          _______ _                           _       _____  _     _ _ _             _              _    _ _     _                   
+         |__   __| |                         | |     |  __ \| |   (_) (_)           (_)            | |  | (_)   | |                  
+            | |  | |__  _ __ ___  _   _  __ _| |__   | |__) | |__  _| |_ _ __  _ __  _ _ __   ___  | |__| |_ ___| |_ ___  _ __ _   _ 
+            | |  | '_ \| '__/ _ \| | | |/ _` | '_ \  |  ___/| '_ \| | | | '_ \| '_ \| | '_ \ / _ \ |  __  | / __| __/ _ \| '__| | | |
+            | |  | | | | | | (_) | |_| | (_| | | | | | |    | | | | | | | |_) | |_) | | | | |  __/ | |  | | \__ \ || (_) | |  | |_| |
+            |_|  |_| |_|_|  \___/ \__,_|\__, |_| |_| |_|    |_| |_|_|_|_| .__/| .__/|_|_| |_|\___| |_|  |_|_|___/\__\___/|_|   \__, |
+                                         __/ |                          | |   | |                                               __/ |
+                                        |___/                           |_|   |_|                                              |___/ 
+    """)
 
-print(r""" 
-      _______ _                           _       _____  _     _ _ _             _              _    _ _     _                   
-     |__   __| |                         | |     |  __ \| |   (_) (_)           (_)            | |  | (_)   | |                  
-        | |  | |__  _ __ ___  _   _  __ _| |__   | |__) | |__  _| |_ _ __  _ __  _ _ __   ___  | |__| |_ ___| |_ ___  _ __ _   _ 
-        | |  | '_ \| '__/ _ \| | | |/ _` | '_ \  |  ___/| '_ \| | | | '_ \| '_ \| | '_ \ / _ \ |  __  | / __| __/ _ \| '__| | | |
-        | |  | | | | | | (_) | |_| | (_| | | | | | |    | | | | | | | |_) | |_) | | | | |  __/ | |  | | \__ \ || (_) | |  | |_| |
-        |_|  |_| |_|_|  \___/ \__,_|\__, |_| |_| |_|    |_| |_|_|_|_| .__/| .__/|_|_| |_|\___| |_|  |_|_|___/\__\___/|_|   \__, |
-                                     __/ |                          | |   | |                                               __/ |
-                                    |___/                           |_|   |_|                                              |___/ 
-""")
+    print("-" * 150)
 
-print("-" * 150)
+    print("Welcome to LAKBAY KASAYSAYAN, a Philippine history quiz game!")
+    print(
+        "\nIn this game, your knowledge of the Philippines throughout the occupation eras of the Spaniards, Americans, and Japanese, will be tested!")
+    print("\nAre you a beginner? Or will you prove yourself as an Expert Historian?")
+    print("-" * 100)
+    user_name = input("Tell me your name, historian! ")
 
-print("Welcome to LAKBAY KASAYSAYAN, a Philippine history quiz game!")
-print(
-    "\nIn this game, your knowledge of the Philippines throughout the occupation eras of the Spaniards, Americans, and Japanese, will be tested!")
-print("\nAre you a beginner? Or will you prove yourself as an Expert Historian?")
-print("-" * 100)
-user_name = input("Tell me your name, historian! ")
-
-print("-" * 100)
-
-user_leave_choice = "N"
-
-while user_leave_choice == "N":
-
-    print("Hello,", user_name + "!")
-
-    print("1. New Entry")
-    print("2. Instruction Manual")
-    print("3. Leave")
-
-    user_choice = input("What would you like to do, Historian? ")
+    print("-" * 100)
 
     user_leave_choice = "N"
 
-    if user_choice == "1":
-        proceed_choice = "Y"
-        while proceed_choice == "Y":
-            quiz_main()
-            proceed_choice = input("Do you want to start another Entry? (Y for Yes, N for No): ")
-        print("Thank you for playing! Returning to main menu:")
+    while user_leave_choice == "N":
 
-    elif user_choice == "2":
-        instructions()
-        print("Thank you for reading! Returning to main menu:")
+        print("Hello,", user_name + "!")
 
-    elif user_choice == "3":
-        user_leave_choice = str(input("Do you want to leave? (Y for Yes, N for No): "))
+        print("1. New Entry")
+        print("2. Instruction Manual")
+        print("3. Leave")
+
+        user_choice = input("What would you like to do, Historian? ")
+
+        user_leave_choice = "N"
+
+        if user_choice == "1":
+            proceed_choice = "Y"
+            while proceed_choice == "Y":
+                quiz_main()
+                proceed_choice = input("Do you want to start another Entry? (Y for Yes, N for No): ")
+            print("Thank you for playing! Returning to main menu:")
+
+        elif user_choice == "2":
+            instructions()
+            print("Thank you for reading! Returning to main menu:")
+
+        elif user_choice == "3":
+            user_leave_choice = str(input("Do you want to leave? (Y for Yes, N for No): "))
+
+        else:
+            print("Invalid choice!")
+
+    user_confirmation_leave = str(input("Are you sure you want to leave? (Y/N) "))
+    if user_leave_choice == "Y":
+        print("Thank you for playing! See you next time,", user_name + "!")
 
     else:
-        print("Invalid choice!")
+        print("Thank you for staying! Returning to main menu:")
 
-user_confirmation_leave = str(input("Are you sure you want to leave? (Y/N) "))
-if user_leave_choice == "Y":
-    print("Thank you for playing! See you next time,", user_name + "!")
-
-else:
-    print("Thank you for staying! Returning to main menu:")
+except FileNotFoundError:
+    print("Error: The file 'data.json' was not found.")
+except json.JSONDecodeError as e:
+    print(f"Failed to decode JSON: {e}")
