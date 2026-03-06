@@ -1,5 +1,15 @@
 # Random mod for the random choosing of questions.
 import random
+# Read JSON
+import json
+
+# Questions for each topic
+try:
+    # READING from the file
+    filename = "questions.json"
+    with open(filename, 'r') as file:
+        # Load the JSON data from the file
+        data = json.load(file)
 
     # Questions for each topic
     spanish_questions_easy = [
